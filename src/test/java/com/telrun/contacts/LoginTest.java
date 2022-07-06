@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CreateAccountTest extends TestBase {
+public class LoginTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
@@ -14,8 +14,8 @@ public class CreateAccountTest extends TestBase {
     }
 
     @Test
-    public void testRegistrationPositive() {
-        registration();
+    public void loginUserPositiveTest() {
+        login();
         Assert.assertTrue(isSignOutPresent());
     }
 }
