@@ -52,4 +52,8 @@ public class ContactHelper extends HelperBase{
         type(By.cssSelector("input:nth-child(5)"), contact.getAddress());
         type(By.cssSelector("input:nth-child(6)"), contact.getDescription());
     }
+
+    public boolean isComponentFormPresent() {
+        return wd.findElements(By.cssSelector("div:nth-child(2) div div")).size() > 0;
+    }
 }

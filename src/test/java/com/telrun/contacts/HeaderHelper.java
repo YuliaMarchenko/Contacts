@@ -19,8 +19,4 @@ public class HeaderHelper extends HelperBase{
     public boolean isSignOutPresent() {
         return isElementPresent(By.xpath("//button[contains(.,'Sign Out')]"));
     }
-
-    public boolean isComponentFormPresent() {
-        return wd.findElements(By.cssSelector("div:nth-child(2) div div")).size() > 0;
-    }
 }

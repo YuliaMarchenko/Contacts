@@ -5,6 +5,6 @@ import org.testng.annotations.Test;
 public class HomePageTests extends TestBase{
     @Test
     public void testOpenHomePage() {
-        app.getHeader().isComponentFormPresent();
+        app.getContact().isComponentFormPresent();
     }
 }
