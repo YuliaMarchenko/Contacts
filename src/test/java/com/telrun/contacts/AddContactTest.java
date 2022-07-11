@@ -9,19 +9,19 @@ public class AddContactTest extends TestBase{
 
     @BeforeMethod
     public void ensurePrecondition() {
-        if (isLoginLinkPresent()) {
-            login();
+        if (app.getHeader().isLoginLinkPresent()) {
+            app.getUser().login();
         }
     }
 
     @Test
     public void addContactPositiveTest(){
-        addContact();
-        Assert.assertTrue(isContactCreated("Karl"));
+        app.getContact().addContact();
+        Assert.assertTrue(app.getContact().isContactCreated("Karl"));
     }
 
     @AfterMethod
     public void postCondition(){
-        removeContact();
+        app.getContact().removeContact();
     }
 }
