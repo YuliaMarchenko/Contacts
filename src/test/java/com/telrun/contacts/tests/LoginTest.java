@@ -29,23 +29,4 @@ public class LoginTest extends TestBase {
         Assert.assertTrue(app.getHeader().isSignOutPresent());
     }
 
-    @DataProvider
-    public Iterator<Object[]> loginFromCsv() throws IOException {
-        List<Object[]> list = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/invalidEmail.csv"));
-        String line = reader.readLine();
-        while (line != null){
-            String[] split = line.split(",");
-            list.add(new Object[]{new User().setEmail(split[0]).setPassword(split[1])});
-            line = reader.readLine();
-        }
-        return list.iterator();
-    }
-
-    @Test(dataProvider = "loginFromCsv")
-    public void loginUserNegativeTest(User user) {
-        app.getUser().click(By.xpath("//a[contains(.,'LOGIN')]"));
-        app.getUser().fillLoginRegistrationForm(user);
-        app.getUser().click(By.xpath("//button[contains(.,' Login')]"));
-    }
 }
