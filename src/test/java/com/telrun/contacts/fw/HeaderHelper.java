@@ -1,4 +1,4 @@
-package com.telrun.contacts;
+package com.telrun.contacts.fw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

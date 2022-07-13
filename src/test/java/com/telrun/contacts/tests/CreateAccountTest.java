@@ -1,4 +1,4 @@
-package com.telrun.contacts;
+package com.telrun.contacts.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;

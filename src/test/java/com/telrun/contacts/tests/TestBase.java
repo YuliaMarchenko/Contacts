@@ -1,5 +1,6 @@
-package com.telrun.contacts;
+package com.telrun.contacts.tests;
 
+import com.telrun.contacts.fw.ApplicationManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 

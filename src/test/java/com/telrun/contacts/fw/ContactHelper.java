@@ -1,5 +1,6 @@
-package com.telrun.contacts;
+package com.telrun.contacts.fw;
 
+import com.telrun.contacts.models.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
