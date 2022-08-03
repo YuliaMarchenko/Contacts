@@ -57,8 +57,12 @@ public class HelperBase {
         }
     }
 
+    public Alert getAlert(){
+        return new WebDriverWait(wd, 20).until(ExpectedConditions.alertIsPresent());
+    }
+
     public boolean isAlertPresent() {
-        Alert alert = new WebDriverWait(wd, 20).until(ExpectedConditions.alertIsPresent());
+        Alert alert = getAlert();
         if (alert == null){
             return false;
         } else {
@@ -69,6 +73,10 @@ public class HelperBase {
     }
 
     public String takeScreenshot() {
+        Alert alert = getAlert();
+        if (alert != null) {
+            wd.switchTo().alert().accept();
+        }
         File tmp = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
         File screenshot = new File("screenshorts/screen" + System.currentTimeMillis() + ".png");
         try {

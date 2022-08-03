@@ -7,6 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class CreateAccountTest extends TestBase {
 
     @BeforeMethod
@@ -17,7 +19,7 @@ public class CreateAccountTest extends TestBase {
     }
 
     @Test(enabled = true)
-    public void testRegistrationPositive(){
+    public void testRegistrationPositive() throws InterruptedException {
         app.getUser().registration();
         Assert.assertTrue(app.getHeader().isSignOutPresent());
     }

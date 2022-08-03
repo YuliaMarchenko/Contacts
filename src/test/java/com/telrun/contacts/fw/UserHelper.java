@@ -37,4 +37,8 @@ public class UserHelper extends HelperBase {
     public void clickLogin() {
         click(By.xpath("//button[contains(.,'Login')]"));
     }
+
+    public void clickAlert() {
+        wd.switchTo().alert().dismiss();
+    }
 }
