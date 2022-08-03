@@ -3,6 +3,15 @@ package com.telrun.contacts.models;
 public class Contact {
     private String name;
     private String lastName;
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
+    }
+
     private String phone;
     private String email;
     private String address;

@@ -1,0 +1,50 @@
+502  [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/yulia_marchenko/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml"
+909  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] -200438387
+910  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null] -368093767
+913  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+916  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+916  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+916  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.setUp()[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+916  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 1939654662
+916  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+934  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+935  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+936  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.setUp()[pri:0, instance:null] FROM NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+936  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+936  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+936  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+936  [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.setUp()[pri:0, instance:null]
+936  [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+936  [main] DEBUG org.testng.internal.Graph - [Graph]               CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+936  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+948  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stopTest(org.testng.ITestResult)[pri:0, instance:null] 321724141
+948  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+949  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+949  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+949  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+964  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.testRegistrationUserNegativeTest(com.telrun.contacts.models.User)[pri:0, instance:com.telrun.contacts.tests.CreateAccountTest@710636b0] -805045856
+964  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+964  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+964  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+964  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+969  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/yulia_marchenko/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml
+
+6367 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='test1test.com', password='test12_TEST1'}]
+7958 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest
+9946 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='test1@com', password='test12_TEST2'}]
+11416 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest
+13330 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='test1@test.com', password='test12_TEST3'}]
+14834 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest
+16788 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='t@t', password='test12_TEST4'}]
+18234 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest
+20256 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='тест@test.com', password='test12_TEST5'}]
+22271 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest
+25249 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='test1@test.com', password='test12_TEST6'}]
+26791 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest
+28762 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='@', password='test12_TEST7'}]
+30206 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest
+32184 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='t@t.', password='test12_TEST8'}]
+33658 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest
+35595 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationUserNegativeTest with data: [User{email='t@', password='test12_TEST9'}]
+37034 [main] INFO  com.telrun.contacts.tests.TestBase - Passed: testRegistrationUserNegativeTest

@@ -1,6 +1,7 @@
 package com.telrun.contacts.tests;
 
 import com.telrun.contacts.models.Contact;
+import com.telrun.contacts.utils.DataProviders;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +23,7 @@ public class AddContactTest extends TestBase {
         }
     }
 
-  /*  @DataProvider
+   /* @DataProvider
     public Iterator<Object[]> addNewContact() {
         List<Object[]> list = new ArrayList<>();
         list.add(new Object[]{"Ivan", "Sidorov", "232776568668", "testIvan@test.com", "Berlin", "description1"});
@@ -32,40 +33,21 @@ public class AddContactTest extends TestBase {
         return list.iterator();
 
         @Test(dataProvider = "addNewContact")
-        public void addContactPositiveTestFromDataProvider(String name, String lastName, String phone,
-                                                       String email, String address, String description) {
-        app.getContact().click(By.cssSelector("[href=\"/add\"]"));
-        app.getContact().fillContactForm(new Contact()
-                .setName(name)
-                .setLastName(lastName)
-                .setPhone(phone)
-                .setEmail(email)
-                .setAddress(address)
-                .setDescription(description));
-        app.getContact().click(By.cssSelector(".add_form__2rsm2 button"));
-    }
+        public void addContactPositiveTestFromDataProvider (String name, String lastName, String phone,
+                String email, String address, String description){
+            app.getContact().click(By.cssSelector("[href=\"/add\"]"));
+            app.getContact().fillContactForm(new Contact()
+                    .setName(name)
+                    .setLastName(lastName)
+                    .setPhone(phone)
+                    .setEmail(email)
+                    .setAddress(address)
+                    .setDescription(description));
+            app.getContact().click(By.cssSelector(".add_form__2rsm2 button"));
+        }
     }*/
 
-    @DataProvider
-    public Iterator<Object[]> addNewContactFromCSV() throws IOException {
-        List<Object[]> list = new ArrayList<>();
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/addContact.csv")));
-        String line = reader.readLine();
-        while (line != null) {
-            String[] split = line.split(",");
-            list.add(new Object[]{new Contact()
-                    .setName(split[0])
-                    .setLastName(split[1])
-                    .setPhone(split[2])
-                    .setEmail(split[3])
-                    .setAddress(split[4])
-                    .setDescription(split[5])});
-            line = reader.readLine();
-        }
-        return list.iterator();
-    }
-
-    @Test(dataProvider = "addNewContactFromCSV")
+    @Test(dataProvider = "addNewContactFromCSV", dataProviderClass = DataProviders.class)
     public void addContactPositiveTestFromCSV(Contact contact) {
         app.getContact().click(By.cssSelector("[href=\"/add\"]"));
         app.getContact().fillContactForm(contact);

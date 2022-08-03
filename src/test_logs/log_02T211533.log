@@ -1,0 +1,33 @@
+492  [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/yulia_marchenko/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml"
+894  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] -200438387
+894  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null] -368093767
+895  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+896  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+896  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+896  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.setUp()[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+896  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 1939654662
+896  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+910  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+910  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+913  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.setUp()[pri:0, instance:null] FROM NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+914  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+914  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+914  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+914  [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.setUp()[pri:0, instance:null]
+914  [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+914  [main] DEBUG org.testng.internal.Graph - [Graph]               CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+914  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+941  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stopTest(org.testng.ITestResult)[pri:0, instance:null] 321724141
+942  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+944  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+944  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+944  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+960  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.testRegistrationPositive()[pri:0, instance:com.telrun.contacts.tests.CreateAccountTest@710636b0] 711398985
+960  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+960  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+960  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+960  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+965  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/yulia_marchenko/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml
+
+5856 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationPositive with data: []

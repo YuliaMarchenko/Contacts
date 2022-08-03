@@ -1,0 +1,34 @@
+486  [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/yulia_marchenko/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml"
+929  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] -200438387
+941  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 1939654662
+941  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE LoginTest.ensurePrecondition()[pri:0, instance:null] 575593169
+942  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+943  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+943  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+943  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.setUp()[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+943  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+949  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+950  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR LoginTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+951  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.setUp()[pri:0, instance:null] FROM NODE LoginTest.ensurePrecondition()[pri:0, instance:null]
+951  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM NODE LoginTest.ensurePrecondition()[pri:0, instance:null]
+951  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+951  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+952  [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.setUp()[pri:0, instance:null]
+952  [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+952  [main] DEBUG org.testng.internal.Graph - [Graph]               LoginTest.ensurePrecondition()[pri:0, instance:null]
+952  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+959  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stopTest(org.testng.ITestResult)[pri:0, instance:null] 321724141
+959  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+960  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+960  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+961  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+970  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE LoginTest.loginUserNegativeTest()[pri:0, instance:com.telrun.contacts.tests.LoginTest@2de56eb2] -701531788
+971  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+971  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+971  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+971  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+976  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/yulia_marchenko/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml
+
+6025 [main] INFO  com.telrun.contacts.tests.TestBase - Test start loginUserNegativeTest with data: []
+8339 [main] ERROR com.telrun.contacts.tests.TestBase - Failed: loginUserNegativeTestScreenshot: /Users/yulia_marchenko/seleniumQA/Contacts/screenshorts/screen1659532948159.png

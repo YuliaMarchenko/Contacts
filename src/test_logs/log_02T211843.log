@@ -1,0 +1,33 @@
+479  [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/yulia_marchenko/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml"
+917  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] -200438387
+917  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null] -368093767
+920  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+924  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+924  [main] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+925  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED TestBase.setUp()[pri:0, instance:null] FROM INDEPENDENT OBJECTS
+925  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.setUp()[pri:0, instance:null] 1939654662
+925  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+931  [ForkJoinPool.commonPool-worker-3] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+932  [ForkJoinPool.commonPool-worker-3] DEBUG org.testng.internal.Graph - [Graph]   ADDING PREDECESSOR FOR CreateAccountTest.ensurePrecondition()[pri:0, instance:null] ==> TestBase.setUp()[pri:0, instance:null]
+933  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.setUp()[pri:0, instance:null] FROM NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+933  [main] DEBUG org.testng.internal.Graph - [Graph]   REMOVED PRED TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null] FROM NODE CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+933  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+933  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+934  [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.setUp()[pri:0, instance:null]
+934  [main] DEBUG org.testng.internal.Graph - [Graph]               TestBase.startTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:null]
+934  [main] DEBUG org.testng.internal.Graph - [Graph]               CreateAccountTest.ensurePrecondition()[pri:0, instance:null]
+934  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+941  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE TestBase.stopTest(org.testng.ITestResult)[pri:0, instance:null] 321724141
+942  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+943  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+943  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+943  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+954  [main] DEBUG org.testng.internal.Graph - [Graph] ADDING NODE CreateAccountTest.testRegistrationPositive()[pri:0, instance:com.telrun.contacts.tests.CreateAccountTest@3de8f619] -146156110
+954  [main] DEBUG org.testng.internal.Graph - [Graph] ================ SORTING
+954  [main] DEBUG org.testng.internal.Graph - [Graph] =============== DONE SORTING
+954  [main] DEBUG org.testng.internal.Graph - [Graph] ====== SORTED NODES
+954  [main] DEBUG org.testng.internal.Graph - [Graph] ====== END SORTED NODES
+961  [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/yulia_marchenko/Library/Caches/JetBrains/IdeaIC2021.3/temp-testng-customsuite.xml
+
+3779 [main] INFO  com.telrun.contacts.tests.TestBase - Test start testRegistrationPositive with data: []

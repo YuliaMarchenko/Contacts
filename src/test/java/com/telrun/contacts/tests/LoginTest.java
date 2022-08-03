@@ -1,18 +1,9 @@
 package com.telrun.contacts.tests;
 
 import com.telrun.contacts.models.User;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class LoginTest extends TestBase {
 
@@ -29,4 +20,12 @@ public class LoginTest extends TestBase {
         Assert.assertTrue(app.getHeader().isSignOutPresent());
     }
 
+    @Test
+    public void loginUserNegativeTest(){
+        app.getUser().clickLoginHeader();
+        app.getUser().fillLoginRegistrationForm(new User().setEmail("test102@test.com").setPassword(" "));
+        app.getUser().clickLogin();
+        Assert.assertTrue(app.getUser().isAlertPresent());
+        Assert.assertTrue(app.getUser().isErrorPresent());
+    }
 }
