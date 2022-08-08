@@ -63,5 +63,6 @@ public class AddContactTest extends TestBase {
     @AfterMethod
     public void postCondition() {
         app.getContact().removeContact();
+        app.getContact().pause(2000);
     }
 }
