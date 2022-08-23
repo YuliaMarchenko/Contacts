@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telrun.contacts.tests.AddContactTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-08-09T08:37:15" hostname="MacBook-Air-Yulia.local" time="46.796">
+  <properties/>
+  <testcase name="addContactPositiveTest" classname="com.telrun.contacts.tests.AddContactTest" time="4.928"/>
+  <testcase name="addContactPositiveTestFromCSV[0](Contact{name='Ivan', phone='232776568668'})" classname="com.telrun.contacts.tests.AddContactTest" time="4.652"/>
+  <testcase name="addContactPositiveTestFromCSV[1](Contact{name='Sofia', phone='3534534556'})" classname="com.telrun.contacts.tests.AddContactTest" time="4.468"/>
+  <testcase name="addContactPositiveTestFromCSV[2](Contact{name='Roman', phone='644565545'})" classname="com.telrun.contacts.tests.AddContactTest" time="4.456"/>
+  <testcase name="addContactPositiveTestFromCSV[3](Contact{name='Petr', phone='564455334'})" classname="com.telrun.contacts.tests.AddContactTest" time="4.495"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 12214
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 09, 2022 10:37:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 33131
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 09, 2022 10:37:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 45756
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 09, 2022 10:37:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 40358
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 09, 2022 10:37:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 41809
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 09, 2022 10:37:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
